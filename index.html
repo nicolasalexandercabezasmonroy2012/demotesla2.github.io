@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesla</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="card" class="card">
+      <div>Est Devlivery: Dec 2022-</div>
+      <div id="month"> Apr 2023</div>
+      <div class="row seccionBorder">
+        <div>Model y Performance</div>
+        <div id="cost">$62.190*</div>
+      </div>
+      <div class="row">
+        <div>
+          Price aboves includes potencial incentives and gas saving of.
+        </div>
+        <div id="plus"></div>
+        <div>
+          <span onclick="addPlus()" class="material-icons"> add_circle </span>
+        </div>
+        <div>Lear more</div>
+      </div>
+      <div onclick="showShorts()" class="btn">Feature Details</div>
+      <div>
+        <img id="car" class="imgCar" src="images/black.png" alt="" srcset="" />
+      </div>
+      <div style="visibility:hidden;" class="row" id="shorts">
+        <div><img class="imgshorts" src="images/short1.png" alt="" srcset=""></div>
+        <div><img class="imgshorts" src="images/short2.jpg" alt="" srcset=""></div>
+        <div><img class="imgshorts" src="images/short3.png" alt="" srcset=""></div>
+      </div>
+      <div class="title">Paint</div>
+      <div class="row">
+        <div>
+          <img
+            onmouseover="changeimages('images/white.png',2000,'Apr 2023','white')"
+            class="btnimg"
+            src="images/Paint_White.avif"
+          />
+        </div>
+        <div>
+          <img
+            onmouseover="changeimages('images/gray.png',2500,'May 2023','gray')"
+            class="btnimg"
+            src="images/Paint_MidnightSilver.avif"
+          />
+        </div>
+        <div>
+          <img
+            onmouseover="changeimages('images/blue.png',3000,'Jun 2023','blue')"
+            class="btnimg"
+            src="images/Paint_Blue.avif"
+          />
+        </div>
+        <div>
+          <img
+            onmouseover="changeimages('images/black.png',3500,'Jul 2023','black')"
+            class="btnimg"
+            src="images/Paint_Black.avif"
+          />
+        </div>
+        <div>
+          <img
+            onmouseover="changeimages('images/red.png',4000,'Agus 2023','red')"
+            class="btnimg"
+            src="images/Paint_Red.avif"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer">Red Multi-Coat</div>
+        <div id="price">$2.000</div>
+      </div>
+    </div>
+  </body>
+</html>
